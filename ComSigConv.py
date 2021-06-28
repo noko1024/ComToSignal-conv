@@ -92,7 +92,7 @@ for sigToken in sigLine:
     i+=1
 
 #ファイル出力
-with open(iDir+"/bitCommand.txt",'w', encoding='utf-8') as f:
+with open(os.path.dirname(filePath)+"/bitCommand.txt",'w', encoding='utf-8') as f:
 
     f.writelines(bitCommand)
 
