@@ -70,7 +70,6 @@ for sigToken in sigLine:
     if roteFlag == True:
         #角度情報をビット命令へ変換
 
-        print(float(sigToken[1])/7.5)
         angleData = int(float(sigToken[1])/7.5)
         angle = bin(angleData).lstrip("0b").zfill(4).replace("0","○").replace("1","●")
         bitToken+=angle
