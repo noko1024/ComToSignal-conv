@@ -77,6 +77,7 @@ def LightConv():
     
         elif sigToken[0] == "停止":
             bitToken = "○○ ○○ "
+            stopFlag = True
 
 
         if roteFlag == True:
@@ -158,6 +159,7 @@ def BinConv():
     
         elif sigToken[0] == "停止":
             bitToken = "b0000 "
+            stopFlag = True
 
 
         if roteFlag == True:
